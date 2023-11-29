@@ -9,10 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 public class Class2 {
-
-public static WebDriver driver;
+	public static WebDriver driver;
 	
 	public static void switchingControlToChildWindow(String expectedtitle,String parentid,Set<String> allid)
 	{
@@ -36,9 +36,11 @@ public static WebDriver driver;
 		element.click();
 		
 	}
-	public static void main(String[] args) throws Throwable {
-		
-	
+
+
+	@Test
+	public void data() throws Throwable {
+
 	 driver=new ChromeDriver();
 	 String parentid=driver.getWindowHandle();
 	driver.manage().window().maximize();
@@ -75,13 +77,13 @@ public static WebDriver driver;
 		String v=price.getText();
 		System.out.println(v);
 		
-	}
+	
 	Thread.sleep(10000);
 	
 	driver.quit();
 	}
 
-	
-	}
+	}	
+}
 
 

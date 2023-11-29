@@ -1,8 +1,10 @@
 package project1;
 
-public class Class1 {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public class Class1 {
+    @Test
+	public void data() {
 		System.out.println("----main1-----");
 		System.out.println("----main2-----");
 		System.out.println("----main3-----");
