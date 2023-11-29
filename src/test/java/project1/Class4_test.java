@@ -3,9 +3,11 @@ package project1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Class4_test {
 	
+	@Test
 	public void class4() {
 	String BROWSER= System.getProperty("browser");
 	 String URL= System.getProperty("url");
