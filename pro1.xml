@@ -11,6 +11,7 @@
       
       <class name="project1.Class3_test"/>
       <class name="project1.Class1_test"/>
+      <class name="project1.Class2_test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
