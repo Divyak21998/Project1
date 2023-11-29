@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class Class2 {
+public class Class2_test{
 	public static WebDriver driver;
 	
 	public static void switchingControlToChildWindow(String expectedtitle,String parentid,Set<String> allid)
@@ -38,7 +38,7 @@ public class Class2 {
 	}
 
 
-	@Test
+	@Test(groups = "smoketest")
 	public void data() throws Throwable {
 
 	 driver=new ChromeDriver();
