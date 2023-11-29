@@ -77,13 +77,13 @@ public class Class2_test{
 		String v=price.getText();
 		System.out.println(v);
 		
-	
+	}
 	Thread.sleep(10000);
 	
 	driver.quit();
 	}
 
 	}	
-}
+
 
 
