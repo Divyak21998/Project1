@@ -8,8 +8,8 @@
 	</groups>
   <test thread-count="1" name="Test">
     <classes>
-      <class name="project1.Class2"/>
-      <class name="project1.Class1"/>
+      <class name="project1.Class2_test"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

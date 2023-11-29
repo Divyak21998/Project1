@@ -75,7 +75,9 @@ public class Class2_test{
 	List<WebElement> allprice = driver.findElements(By.xpath("//span[@class='item-price']"));
 	for (WebElement  price : allprice) {
 		String v=price.getText();
-		System.out.println(v);
+		System.out.println("---main1----");
+		System.out.println("---main2----");
+		System.out.println("---main3----");
 		
 	}
 	Thread.sleep(10000);
