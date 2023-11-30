@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Class4_test {
-	WebDriver driver;
+	
 	@Test
 	public  void test() {
 		
@@ -14,10 +14,10 @@ public class Class4_test {
 		 String URL= System.getProperty("url");
 		 String USERNAME = System.getProperty("username");
       	 String PASSWORD= System.getProperty("password");
+      	
 		 
-		 if(BROWSER.equals("browser")) {
-		 this.driver=new ChromeDriver();
-		 }
+			 WebDriver driver=new ChromeDriver();
+		 
 			driver.manage().window().maximize();
 			driver.get(URL);
 			driver.findElement(By.name("user_name")).sendKeys(USERNAME);
