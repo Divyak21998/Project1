@@ -16,7 +16,7 @@ public class Class4_test {
       	 String PASSWORD= System.getProperty("password");
 		 
 		 if(BROWSER.equals("browser")) {
-		  driver=new ChromeDriver();
+		 this.driver=new ChromeDriver();
 		 }
 			driver.manage().window().maximize();
 			driver.get(URL);
