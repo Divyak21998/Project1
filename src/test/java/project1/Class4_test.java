@@ -7,6 +7,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Class4_test {
 	public  WebDriver driver;
 	@Test
@@ -18,12 +20,15 @@ public class Class4_test {
       	 String PASSWORD= System.getProperty("password");
       	
 		 if(BROWSER.equalsIgnoreCase("chrome")) {
+			
 			  driver=new ChromeDriver();
 		 }
 		 else if(BROWSER.equalsIgnoreCase("firefox")) {
+			
 			  driver=new FirefoxDriver();
 		 }
 		 else if(BROWSER.equalsIgnoreCase("edge")) {
+			
 			  driver=new EdgeDriver();
 		 }
 		 else
